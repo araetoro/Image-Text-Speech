@@ -5,7 +5,7 @@ import pyttsx3
 from googletrans import Translator
 
 # open image
-img = Image.open(r'C:\Users\amber.toro\PycharmProjects\imageToText\images\test.png')
+img = Image.open(r'C:\Users\user\PycharmProjects\imageToText\images\test.png')
 
 # prints image format
 print(img)
