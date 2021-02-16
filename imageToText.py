@@ -14,6 +14,8 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 result = pytesseract.image_to_string(img)
 
+result = result.replace("\n", " ")
+
 print(result)
 
 # audio of image text
