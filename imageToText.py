@@ -15,3 +15,14 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 result = pytesseract.image_to_string(img)
 
 print(result)
+
+# audio of image text
+
+engine = pyttsx3.init()
+
+# setting the voice to female voice 1
+voices = engine.getProperty('voices')
+engine.setProperty('voice', voices[1].id)
+
+engine.say(result)
+engine.runAndWait()
